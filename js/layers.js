@@ -44,11 +44,12 @@ addLayer("L", {
         13: {
             name: "Level manipulation",
             description: "Multiply Level gain based on messsages",
-            cost: new Decimal(1),
+            cost: new Decimal(5),
             effect(){
                 return player.points.add(1).pow(0.15)
             },
             effectDisplay(){ return format(upgradeEffect(this.layer, this.id))+"x"}
         },
+        
     }
 })
